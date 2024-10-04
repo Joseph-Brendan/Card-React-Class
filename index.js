@@ -72,3 +72,24 @@ const thirdEmployeeSalary = calculateTotalPayment(employee3.baseSalary, employee
 const completeTotalSalary = firstEmployeeSalary + secondEmployeeSalary + thirdEmployeeSalary
 
 console.log(`The total salary you will pay for the year including bonus is $${completeTotalSalary}`)
+
+
+
+
+// Word Problem 2
+function calorieCounter(walkingtime, runningtime, cyclingtime){
+    const walkingCaloriesaMinute = 5
+    const runningCaloriesaMinute = 10
+    const cyclingCaloriesaMinute = 8
+
+    const walkingCaloriesBurnt = walkingtime * walkingCaloriesaMinute
+    const runningCaloriesBurnt = runningtime * runningCaloriesaMinute
+    const cyclingCaloriesBurnt = cyclingtime * cyclingCaloriesaMinute;
+
+    const totalCaloriesburnt = walkingCaloriesBurnt + runningCaloriesBurnt + cyclingCaloriesBurnt
+
+    return totalCaloriesburnt
+}
+
+let resultOfCalories = calorieCounter(30, 15, 20)
+console.log(`Your total calories burnt is ${resultOfCalories}`)
