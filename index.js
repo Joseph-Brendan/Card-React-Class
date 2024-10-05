@@ -106,3 +106,109 @@ function iceCreamOrder(customerName, ...flavorsOrdered){
 }
 
 iceCreamOrder("Elizabeth", "vanilla")
+
+
+
+
+// Object literals
+const person = {
+    name : "Ayomide",
+    country : "Kenya",
+    age : 120
+}
+
+//Dot notation
+let personName = person.name
+console.log(personName)
+
+// Bracket notation
+let country = person["country"]
+console.log(country)
+
+// Add and Update properties
+person.occupation = "Software Engineer"
+console.log(person)
+
+person.country = "Nigeria"
+console.log(person)
+
+// Delete Properties from an Object
+delete person.occupation
+console.log(person)
+
+
+
+// Methods in an object literal
+const newPerson = {
+    name : "Babatunde",
+    country : "Nigeria",
+    age : 23,
+    typeOfCitizen : function(){
+        if(this.age > 65){
+            return "Senior Citizen"
+        }else{
+            return "Junior Citizen"
+        }
+    }
+}
+console.log(newPerson.typeOfCitizen())
+
+
+//ES6 formats for writing object literals
+const city = "Miami"
+const myCountry = "America"
+
+const cityData = {
+    city,
+    myCountry,
+    name : "Joseph"
+}
+console.log(cityData)
+
+
+// Computed property Name - ES6
+const town = "nameOfTown"
+
+const anotherCityData = {
+    country : "America",
+    [town] : "Brooklyn"
+}
+console.log(anotherCityData)
+let nameOfT = anotherCityData.nameOfTown
+console.log(nameOfT)
+
+
+// Nested Object literal
+const student = {
+    name : "Ibinabo",
+    age : 56,
+    address : {
+        city : "Lagos",
+        street : "Down Below Mini Ochamba",
+        country : "Nigeria"
+    },
+    studentLaptopDetail : {
+        brand : "Macbook",
+        size : "14 Inches",
+        color : "Silver"
+    }
+}
+console.log(`The student's name is ${student.name} and their country is ${student.address.country}`)
+
+
+// Destructuring
+const {age:personAge, name:personID, studentLaptopDetail} = student
+console.log(personAge)
+console.log(personID)
+console.log(studentLaptopDetail)
+
+const {brand} = studentLaptopDetail
+console.log(brand)
+
+
+// Create an object literal using an object constructor
+const car = new Object()
+car.brand = "Mercedes"
+car.color = "Black"
+car.year = 2013
+console.log(car)
