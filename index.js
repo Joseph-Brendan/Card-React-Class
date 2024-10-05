@@ -93,3 +93,16 @@ function calorieCounter(walkingtime, runningtime, cyclingtime){
 
 let resultOfCalories = calorieCounter(30, 15, 20)
 console.log(`Your total calories burnt is ${resultOfCalories}`)
+
+
+
+
+// Ice Cream Word Problem
+function iceCreamOrder(customerName, ...flavorsOrdered){
+    const oneScoopPrice = 500
+    const iceCreamtotalPrice = oneScoopPrice * flavorsOrdered.length
+
+    console.log(`A customer with the Name ${customerName} has placed an order with the following flavors ${flavorsOrdered}. The total amount for this order is ${iceCreamtotalPrice}`)
+}
+
+iceCreamOrder("Elizabeth", "vanilla")
