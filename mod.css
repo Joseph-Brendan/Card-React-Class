@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+    letter-spacing: -1px;
+}
+
+.container{
+    margin: 4rem auto;
+    width: 32%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.75rem;
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.25rem;
+}
+
+.input-group label{
+    font-weight: 600;
+}
+
+.input-group input{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 0.35rem;
+    border: none;
+    outline: none;
+    border: 1px solid #d7d7d7;
+}
+
+.form button{
+    background-color: #7033FF;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.35rem;
+}
